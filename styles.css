@@ -45,6 +45,10 @@ h1 {
     margin-top: 10px;
 }
 
+/* Barre de navigation */
+nav {
+    margin-bottom: 0px; /* Supprimer la marge en bas de la navigation */
+}
 nav ul {
     list-style-type: none;
     padding: 0;
