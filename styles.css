@@ -23,7 +23,13 @@ header {
     text-align: center;
     position: relative;
 }
-
+.bandeau-blanc p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #0074a3; /* Couleur bleue du logo */
+    margin: 0;
+    padding: 15px 0;
+}
 .logo-container {
     position: absolute;
     top: 40%;
