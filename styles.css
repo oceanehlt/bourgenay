@@ -1,3 +1,49 @@
+/* Styles pour les écrans mobiles */
+@media (max-width: 768px) {
+    body {
+        margin-left: 0; /* Annuler la marge sur le côté pour les petits écrans */
+        padding: 10px;
+    }
+
+    header {
+        height: auto; /* Ajuster la hauteur pour que l'image ne soit pas trop grande sur mobile */
+        background-size: cover;
+    }
+
+    .logo-container {
+        top: 30%; /* Réduire l'espacement vertical pour que le logo ne soit pas trop bas */
+    }
+
+    .logo {
+        width: 100px; /* Réduire la taille du logo sur mobile */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Diminuer la taille du texte pour les petits écrans */
+    }
+
+    nav ul {
+        display: block; /* Passer le menu en bloc pour les petits écrans */
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    section {
+        margin: 20px 0;
+        padding: 15px;
+    }
+
+    footer {
+        position: relative;
+        width: 100%; /* Adapter la largeur du footer sur mobile */
+        left: 0;
+    }
+}
+
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f8ff; /* Bleu très léger */
