@@ -69,11 +69,8 @@ nav ul li a {
     text-decoration: none;
     color: #0074a3; /* Couleur du logo */
 }
-
-
-
 h2 {
-    color: #f15a22;
+    color: #f15a22; /* Orange du logo */
     font-size: 2.5em;
     margin-bottom: 20px;
 }
