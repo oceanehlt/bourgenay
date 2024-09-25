@@ -18,13 +18,6 @@ header {
     position: relative;
 }
 
-/* Bandeau blanc en dessous de la navigation */
-.bandeau-blanc {
-    background-color: white; /* Fond blanc */
-    height: 70px; /* Hauteur du bandeau */
-    margin-top: 0px; /* Ajuster le positionnement pour qu'il soit juste sous le menu */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Légère ombre pour donner de la profondeur */
-}
 
 .logo-container {
     position: absolute;
@@ -46,23 +39,34 @@ h1 {
 }
 
 
+.menu-container {
+    background-color: white;
+    padding: 10px 0; /* Espacement interne pour le menu */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de relief */
+    border-radius: 8px; /* Bordures arrondies */
+    margin-top: 10px; /* Espacement au-dessus du menu */
+}
+
+/* Menu de navigation */
 nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
+    background-color: #0074a3; /* Bleu du logo pour la barre de navigation */
 }
 
 nav ul li {
-    display: block; /* Menu empilé sur mobile */
-    margin-bottom: 10px;
+    display: inline-block; /* Menu en ligne */
+    margin-right: 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #0074a3;
+    color: white; /* Texte blanc pour le contraste */
     font-weight: bold;
     font-size: 1.2em;
 }
+
  h2 {
     color: #f15a22; /* Orange du logo */
     font-size: 2.5em;
