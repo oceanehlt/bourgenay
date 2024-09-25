@@ -26,6 +26,8 @@ header {
 .logo {
     width: 150px; /* Ajuster la taille du logo */
     height: auto;
+    background: none; /* Supprimer tout fond blanc autour du logo */
+    border: none; /* Supprimer les bordures */
 }
 
 nav ul {
