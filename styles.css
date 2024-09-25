@@ -42,7 +42,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff; /* Blanc pour contraster avec l'image de fond */
+    color: none; /*  #fff Blanc pour contraster avec l'image de fond */
     font-weight: bold;
     font-size: 1.2em;
 }
