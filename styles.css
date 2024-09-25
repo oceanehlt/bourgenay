@@ -1,79 +1,46 @@
-/* Styles pour les écrans mobiles */
-@media (max-width: 768px) {
-    body {
-        margin-left: 0; /* Annuler la marge sur le côté pour les petits écrans */
-        padding: 10px;
-    }
+/* Styles par défaut - Mobile first */
 
-    header {
-        height: auto; /* Ajuster la hauteur pour que l'image ne soit pas trop grande sur mobile */
-        background-size: cover;
-    }
-
-    .logo-container {
-        top: 30%; /* Réduire l'espacement vertical pour que le logo ne soit pas trop bas */
-    }
-
-    .logo {
-        width: 100px; /* Réduire la taille du logo sur mobile */
-    }
-
-    h1 {
-        font-size: 1.5em; /* Diminuer la taille du texte pour les petits écrans */
-    }
-
-    nav ul {
-        display: block; /* Passer le menu en bloc pour les petits écrans */
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    section {
-        margin: 20px 0;
-        padding: 15px;
-    }
-
-    footer {
-        position: relative;
-        width: 100%; /* Adapter la largeur du footer sur mobile */
-        left: 0;
-    }
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff; /* Bleu très léger */
+    background-color: #f0f8ff;
     color: #333;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    padding: 10px; /* Espacement adapté aux petits écrans */
 }
 
 header {
-    background-image: url('image.png'); /* Remplacer par le bon chemin de l'image */
-    background-size: cover; /* Pour que l'image couvre tout le header */
-    background-position: center; /* Pour centrer l'image */
-    height: 300px; /* Hauteur du bandeau */
+    background-image: url('image.png');
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* Hauteur réduite pour les mobiles */
+    color: white;
+    text-align: center;
     position: relative;
 }
 
 .logo-container {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 .logo {
-    width: 150px; /* Ajuster la taille du logo */
+    width: 120px; /* Taille plus petite sur mobile */
     height: auto;
-    background: none; /* Supprimer tout fond blanc autour du logo */
-    border: none; /* Supprimer les bordures */
+}
+
+h1 {
+    font-size: 1.8em; /* Taille du texte réduite pour mobile */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
 }
 
 nav ul {
@@ -83,95 +50,94 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 15px;
+    display: block; /* Menu empilé sur mobile */
+    margin-bottom: 10px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff; /* Blanc pour contraster avec l'image de fond */
+    color: #fff;
     font-weight: bold;
     font-size: 1.2em;
 }
 
-h1 {
-    color: #fff; /* #0074a3 Bleu du logo */
-    font-size: 2.5em;
-    margin-top: 10px;
-}
-
-h2 {
-    color: #f15a22; /* Orange du logo */
-    margin-top: 40px;
-}
-
 section {
-    margin: 50px auto;
-    padding: 20px;
-    max-width: 800px;
+    margin: 20px 0;
+    padding: 15px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    background-color: #0074a3; /* Rappel du bleu du logo */
-    color: white;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #0074a3; /* Couleur du logo */
-}
-
-.team {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    max-width: 800px;
-    margin: 40px auto;
-}
-
-.team-member {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.team-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-@media (min-width: 768px) {
-    .team {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
 footer {
     background-color: #0074a3;
     color: white;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
+}
+
+/* Media Queries pour les tablettes et écrans plus grands */
+@media (min-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    header {
+        height: 300px; /* Augmenter la hauteur sur les tablettes et plus */
+    }
+
+    .logo {
+        width: 150px; /* Taille plus grande pour les tablettes */
+    }
+
+    h1 {
+        font-size: 2.5em; /* Augmenter la taille du texte */
+    }
+
+    nav ul {
+        display: flex; /* Menu en ligne sur les écrans plus larges */
+        justify-content: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    section {
+        max-width: 800px;
+        margin: 50px auto;
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+    }
+}
+
+/* Media Queries pour les écrans encore plus grands (ordinateurs de bureau) */
+@media (min-width: 1024px) {
+    header {
+        height: 400px;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    nav ul li a {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 30px;
+    }
+}
+
 }
 /* Section Édition 2024 */
 #edition2024 {
