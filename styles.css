@@ -7,7 +7,6 @@ body {
     text-align: center;
 }
 
-/* Style pour le header avec l'image de fond */
 header {
     background-image: url('image.png'); /* Remplacer par le bon chemin de l'image */
     background-size: cover; /* Pour que l'image couvre tout le header */
@@ -25,7 +24,7 @@ header {
 }
 
 .logo {
-    width: 150px;
+    width: 150px; /* Ajuster la taille du logo */
     height: auto;
 }
 
@@ -35,8 +34,17 @@ nav ul {
     text-align: center;
 }
 
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
 
-
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Blanc pour contraster avec l'image de fond */
+    font-weight: bold;
+    font-size: 1.2em;
+}
 
 h1 {
     color: #0074a3; /* Bleu du logo */
