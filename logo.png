@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Le Gueuleton de Bourgenay 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo du Festival Le Gueuleton de Bourgenay 2024" class="logo">
+        <h1>Festival Le Gueuleton de Bourgenay 2024</h1>
+    </header>
+
+    <section id="programme">
+        <h2>Programme du Festival</h2>
+        <p>Découvrez les artistes et événements de cette année dans un cadre convivial.</p>
+    </section>
+
+    <section id="billets">
+        <h2>Achat de Billets</h2>
+        <p>Réservez vos places dès maintenant pour un moment inoubliable.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Pour toute information, n'hésitez pas à nous contacter.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Festival Le Gueuleton de Bourgenay. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
