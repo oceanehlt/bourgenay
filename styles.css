@@ -52,7 +52,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
-    background-color: #0074a3; /* Bleu du logo pour la barre de navigation */
+    background-color: white; /* Bleu du logo pour la barre de navigation */
 }
 
 nav ul li {
@@ -62,7 +62,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white; /* Texte blanc pour le contraste */
+    color: #0074a3; /* Texte blanc pour le contraste */
     font-weight: bold;
     font-size: 1.2em;
 }
