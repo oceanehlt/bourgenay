@@ -21,7 +21,7 @@ header {
 /* Bandeau blanc en dessous de la navigation */
 .bandeau-blanc {
     background-color: white; /* Fond blanc */
-    height: 50px; /* Hauteur du bandeau */
+    height: 70px; /* Hauteur du bandeau */
     margin-top: -10px; /* Ajuster le positionnement pour qu'il soit juste sous le menu */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Légère ombre pour donner de la profondeur */
 }
