@@ -47,13 +47,14 @@ h1 {
 }
 
 /* Menu de navigation */
+
 nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
-    background-color: #0074a3; /* Bleu du logo pour la barre de navigation */
     border-radius: 8px; /* Bordure arrondie pour un design cohérent */
 }
+
 
 nav ul li {
     display: inline-block; /* Menu en ligne */
