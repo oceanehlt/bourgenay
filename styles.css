@@ -7,14 +7,44 @@ body {
     text-align: center;
 }
 
+/* Style pour le header avec l'image de fond */
 header {
-    background-color: #ffffff;
-    padding: 20px;
+    background-image: url('image.png'); /* Remplacer par le bon chemin de l'image */
+    background-size: cover; /* Pour que l'image couvre tout le header */
+    background-position: center; /* Pour centrer l'image */
+    height: 300px; /* Hauteur du bandeau */
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .logo {
     width: 150px;
     height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Blanc pour contraster avec l'image de fond */
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 h1 {
