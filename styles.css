@@ -96,4 +96,47 @@ footer {
     padding: 10px;
     text-align: center;
 }
+/* Section Édition 2024 */
+#edition2024 {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#edition2024 h2 {
+    color: #f15a22; /* Orange du logo */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#edition2024 p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Galerie de photos */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery .photo {
+    width: 250px;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery p {
+    margin-top: 10px;
+    color: #555;
+}
 
